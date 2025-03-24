@@ -11,23 +11,47 @@ input {
     border: 1px dashed yellow;
     padding: 0.5rem;
     font-family: 'Courier New', Courier, monospace;
+    margin: 15px 0;
+    width: 250px;
 }
 
 input:focus {
-    border: 1px dashed yellow;
     outline: none;
+    box-shadow: 0 0 5px yellow;
 }
 
 button {
     background-color: black;
     color: yellow;
     font-family: 'Courier New', Courier, monospace;
-    padding: 0.5rem;
+    padding: 0.5rem 1.5rem;
     border: 1px solid yellow;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 button:hover, button:focus {
     background-color: yellow;
     color: black;
     font-weight: bold;
+    box-shadow: 0 0 10px yellow;
+}
+
+button:nth-of-type(2) {
+    border-style: dashed;
+    position: relative;
+}
+
+button:nth-of-type(2):hover {
+    border-style: solid;
+    background-color: #ff2222;
+    color: black;
+}
+
+#message {
+    margin: 20px;
+    font-size: 1.2em;
+    min-height: 24px;
+    text-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
 }
