@@ -10,3 +10,9 @@ nameInput.onkeyup = (event) => {
 const helloWorld = () => {
     messageP.innerText = `Hello World, ${nameInput.value}!`;
 }
+
+const Limpar = () => {
+    nameInput.value = '';
+    messageP.innerText = '';
+}
+
